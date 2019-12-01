@@ -1,0 +1,17 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: build-environment/hbb-script@master
+      with:
+        script: |
+          cat /etc/centos-release
+          git --version
+          gcc --version
+          g++ --version
