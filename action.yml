@@ -1,0 +1,9 @@
+name: 'Run in Holy Build Box'
+description: 'Build on Linux with an old glibc to get binaries that work on more systems'
+inputs:
+  script:
+    description: 'Bash script to run'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
