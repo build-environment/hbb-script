@@ -1,4 +1,4 @@
-FROM docker.pkg.github.com/build-environment/holy-build-box/hbb-64:2.1.0
+FROM buildenvironments/holy-build-box-64:2.1.0
 
 ENV PATH="/hbb/bin:${PATH}"
 
